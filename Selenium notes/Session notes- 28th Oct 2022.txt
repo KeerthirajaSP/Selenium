@@ -1,0 +1,2578 @@
+Manual Testing-
+
+Testing-
+
+Dev S/w --->ER=AR client expectation
+
+expected result (client expectation)
+Actual result ( what is developed by the developer)
+
+ER<>AR ----> diff b/w - defect 
+
+Why testing need??
+
+
+if testing is not done, directly the s/w will be given to the end users ---> at that point defect is called failure 
+
+SDLC- s/w development life cycle-
+
+Requirement gathering & analysis
+
+Design
+
+Coding
+
+Testing 
+
+Deployment
+
+Maintenance
+
+Waterfall
+Incremental
+V model
+
+Agile-
+
+Req---> Sprint ( 2 weeks )
+
+Req-->plan--->design--> code---> test
+
+DevOps-
+
+Dev+ Operation
+
+Dev 1
+
+int a, b ,c
+a=enter the value
+b=enter the value
+c=a+b
+print c  ------> Repository (appln )- Github
+
+Dev 2        ------> Repository (appln )
+
+int a, b ,c
+a=enter the value
+b=enter the value
+
+Dev 3      ------> Repository (appln )
+
+int a, b ,c
+a=enter the value
+b=enter the value
+c=a+b
+
+add
+
+7 Principles of testing-
+
+stds,rules
+
+1. testing shows presence of defect
+
+100 % defect free product
+
+2. exhaustive testing is impossible
+
+complete testing - N * N
+
+combination- permutations
+
+3. as early as SDLC
+
+as soon as development team starts , testing team should also start
+
+4. defect clustering-
+
+one small defect in a single module can reach to a failue when it is combined with other modules
+
+int a, b ,c
+a=enter the value
+b=enter the value
+c=a+b
+
+5.Pesticide Paradox
+
+whenever developer changes the requ, updation , testing team should also update the test cases, approaches, strategy
+
+Test cases - ER= AR
+
+6. Testing is context dependant
+
+Gaming appln     bank appln
+lang              lang
+UI                 security
+
+7.absence of error fallacy
+
+STLC-
+
+S/w testing life cycle-
+ 
+Requirement gathering & analysis
+
+Test Plan - roadmap for testing activity
+
+Document - Manaully - Word docx
+         - Automation- Test Magmt tools- JIRA, ALM 
+
+Test Managers 
+
+Test Scope
+1.What to be tested-
+In-Scope-
+Feature to be tested
+
+Out-Scope
+Featurwe not to be tested
+
+Resource - Skills ,staffing and needs 
+2.Who will test
+Which resource will test
+
+Test Schedule-
+3.When will testing happen
+Req- critical - defect - 24 hours
+Req- low -   defect    24 to 48 hours 
+
+Manual Testing and automation testing-
+4.How will testing happen 
+
+Test Environment-
+s/w ,h/w requirements need before testing 
+5.Where will testing happen
+
+6. Test estimation
+7. Approach
+8.Risk analysis
+9.Documents
+
+Test Development-
+
+Test Scenario + Test Case
+
+Test Scenario- high level of testing
+as overall testing to be done
+
+Manual - Excel , word docx
+Autpoma- test mgmt tool -jira
+
+Testers, test lead
+
+IRCTC Cancellation-
+
+1. User can cancel the ticket
+
+2. Train cancelled- heavy rain, flood , pandemic
+
+3. Waiting list- after the chart - ticket will cancel
+
+
+Login page-
+
+valid login
+
+invalid login
+
+alternative login
+
+exception login
+
+Test Case-
+
+ER=AR
+
+steps defined in order to check whether expected equal to actual
+
+Test Case Design
+
+Form level validation 
+
+field level validation
+
+username- alphabets -  8 to 25 chars - techniques - best Practises 
+
+verification - process of checking whether are we moving right direction - reviews
+
+validation - checking the whether are we developed product right - end product 
+
+Testing types-
+
+Static - process of checking whether are we moving right direction
+
+Dynamic -checking whether are we developed product right
+
+Types-
+
+White box testing-
+
+testing the code of the appln
+
+i/p---> white box (code)----> o/p
+
+Developer will perform the white box testing
+
+Functionality of the code, logic of the code is tested 
+
+calculator 
+
+add 
+
+a=7 ,b-8 - ER= 15 
+
+int a, b,c
+c=a+b
+print c
+
+AR-C 
+ER=AR
+15=15
+
+white box testing techniques-
+
+int a, b,c
+c=a+b
+print c
+
+statement coverage- at least each of the stt to be executed once
+
+= no of lines executed/ total no of lines * 100= 3/3*100 = 100%
+
+int a, b
+if a>b
+print a
+else
+print b
+end if
+
+
+decision coverage-  at least each of the decision to be executed once
+
+= no of decision execute/ total no of decision*100=
+
+1/2*100= 50 %
+
+conditional coverage
+
+if ( date=1) ( month =Jan) ( Time= 12)
+Print " happy New year"
+else
+Print "happy day"
+end if 
+
+cylomatic complexity-basis path testing 
+
+if A=250
+if A>B
+Print A=c
+else
+Print B=C
+endif
+endif 
+Print A
+
+edges - nodes +2P
+
+edges - connecting lines -8
+
+nodes - stt, dec,con - 7
+
+Part - 1
+
+8-7+2*1
+1+2=3
+
+3 test cases - 100 %
+
+
+
+black box testing
+
+i/p---> cal---->o/p
+a=7,b=8 ER=15 ----->    ----> 15
+
+Testers will test 
+
+Black box testing techniques-
+
+us = 8 - o/p
+us= 23 - o/p
+
+8 to 25 
+
+Equivalance Partioning (EP)-
+
+large set of data- subset of data
+
+1 valid class 
+2 invalid class
+
+0- 7         8 to 25   above 25
+1 invalid   1valid	2 invalid
+ 3 		15	 30	
+
+Boundary value analysis (BVA)
+
+large set of data- subset of data
+
+boundary - lower & upper 
+
+n= 8
+n=25
+
+n-1 , n , n+1
+7     8    9
+24    25   26
+
+
+Decision table testing
+
+
+
+State transition testing 
+
+Test Environment-
+
+s/w . h/w , tools setup
+
+Test Case execution
+
+ER= Appln(Dev) AR
+
+Reg
+First name Passed
+middle name(optional) Failed
+last name    Passed
+
+First name Failed
+Middle Name blocked 
+
+
+Test case dependency
+
+if a test case - has one failed step
+
+---> whether we can test next step of the same test case 
+
+Yes ---> test the next step of same test case
+No ---> Blocked , skip the testing for remaining steps and move to next TC 
+
+1/11/22
+Defect tracking - diff b/w er and the AR
+
+severity-
+
+impact of the defect
+
+technically 
+
+Showstopper/blocker- if testing is not possible further
+
+Critical/major - if the module with high / major functionality
+
+minor - lower priority or functionality
+
+trivial - cosmetic mistakes , spelling mistakes 
+
+enhancement- suggestions, improvisation 
+
+Levels -
+
+High 
+Medium
+Lower
+
+
+priority-
+
+importance to which defect need to be resolved first
+bussiness value
+high
+medium
+low
+
+orgn website - hcl
+
+title/name/theme 
+S-L
+P-H
+
+defect life cycle-
+
+Tester---> defect ---> unconfirmed( discuss with the team)
+
+invalid defect---> REJECTED
+
+valid defect ---> Whether we can fix in current version or later (discuss)
+
+No---> DEFERRED 
+Yes ---> NEW ----> Assign to the Developer --->ASSIGNED--->Developer will try to resolve the defect ---> FIXED(D)
+
+Tester---> Check whether the defect is resolved - Retesting( test again and again the req to see whether defect is resolved)
+
+Regression testing - testing the previously tested , to check the modification doesnt affect the existing ones 
+
+Login page 100 TC- US -1TC defect - 1TC Passed
+  
+
+No---> not resolved ---> RE-OPEN ---> ASSIGNED
+Yes---> CLOSED(T)
+
+test closure- final phase of STLC
+
+Reports & metrics 
+
+what we Plan VS What we executed
+
+Plan -schedule -
+ Severity - high defect - 24 hours 
+ Executed - Defect tracking 
+ Severity - High defect - 48 hours 
+
+ 
+RTM- requirement traceability matrix
+
+
+Testing types
+
+functional- behaviour - 
+
+login page- any user who gives valid details- should be able to login 
+
+non -functional- 
+
+amazon page - concurrently 1 lk user should work - performance of the page - load 
+
+
+levels of testing-
+
+Unit testing-
+
+small module will be tested 
+Developer- appln - will test -will test code- functionality of the code - white box testing  
+
+Integration testing-
+
+ data flow from one module to another module
+
+if the dev gives all the modules at the same time- bundle - big bang approach
+if they give the modules in incremental manner - incremental appraoch
+
+Top down
+
+from major module to sub modules
+
+sub module is under development
+stubs - dummy module
+
+bottom up-
+
+integration from sub module to major module
+
+top module is under development
+
+drivers- calling module 
+
+System testing-
+
+as a whole entire appln will be tested
+
+functional & non -functional testing
+
+testers will perform
+black box testing
+
+Acceptance testing-
+
+client testing
+black box testing
+
+alpha testing - client testing in dev location
+
+beta testing -client testing in client location
+
+new feature ---> release ---> few users---> try to work with the appln---> issues---> feedback ---> provide the details--> issues will be fixed ---> release the standard version
+
+
+Hands-on-
+
+Reviews - Types , flow of review
+
+
+Automation testing-
+
+Flow of manual testing-
+Dev--> appln ---> tester---> Test Cases- ER=AR---> If  ER <>AR ---> Rectification---> Appln ---> Dev
+
+Flow of automation testing-
+
+Dev--->appln---> testers--->tools-->test script--->ER=AR---> if ER <> AR ---> Rectification---> Appln ---> Dev
+
+Tools-
+Robot - instruction has to be given by the tester , it cannot test on its own unless tester gives instruction. 
+
+manual intervention need for automation
+
+Test Script
+
+ER=AR
+
+contains-
+
+1. what is the element you to want to test
+
+attributes / properties 
+
+html page- id ,name ,value , style 
+
+2.  what activity to be performed on the element 
+
+Advantages-
+
+1. fast
+
+2. accurate
+
+3. robust
+
+4. reusable
+
+5. effective
+
+6. reduce time
+
+
+Selenium-
+
+1. Open source tool
+
+2. seleniumhq.org
+
+3. Web based application can only be tested
+
+4. Functionality testing , compatability testing and regression testing
+
+Eg-Amazon 
+
+Req1.1 - test whether user is able to create an account - Functional testing
+
+
+Req1.2- test whether user is able to login to the application with valid details- functional testing 
+
+Req1.3 - test whether vendor can add products to the page - fn
+
+Req1.4 - test whether customer can search for products - fn
+
+Req1.5- test whether application open in chrome browser - compatability 
+
+Req1.6 test whether login page opens in windows OS edge browser - CT
+
+Req1.7- test whether a new feature- cancel module is creating impact to existing req - Regression testing
+
+5. it supports most of the programming & scripting language
+
+6. Suite of products - consist of multiple components 
+
+Contain-
+
+
+1. Selenium IDE-
+
+1. Add-on to firefox, chrome, edge 
+
+2. GUI - 
+
+3. Recording option available
+
+4. easy to learn & use 
+
+Disadvantage-
+
+1. it doesnt support all the browsers
+
+2. by default it doesnt support conditional stt and looping stt in recording mode
+
+3. it is not suitable for bigger projects with critical reqs
+
+2. Selenium RC- Selenium 1
+
+Remote control - server
+
+Tester--->Script---> Java/ C#, Python---> Editor(Eclipse, Intellij)----> RC server------>Appln(browser)
+
+Disadvantage-
+No direct communication b/w tester and appln
+
+
+3. Selenium WebDriver / Selenium 2
+
+Tester--->Script---> Java/ C#, Python---> Junit/TestNg----> Editor(Eclipse, Intellij)---->Appln(browser)
+
+Advantage-
+direct communication b/w tester and appln
+
+Junit-
+
+@- Annotation- meta data
+
+non executable line 
+
+it will tell the information about the below code
+
+default stt-
+
+1.fail- Assertion - ER =AR - forcefully you are failing a method 
+
+2. assertEquals 
+fail("Not yet implemented");
+
+4. Selenium Grid
+
+Descriptive Programming- tester write script on his own
+
+Annotations-
+
+@BeforeClass- it will execute even before your class starts execution
+
+Test - gmail appln - login -  connect to DB 
+
+@AfterClass-
+
+after the class completes its execution , then your afterclass will get executed
+
+Eg - after gamil appln tested- disconnect to db
+
+@before- 
+
+before your test method it will execute 
+
+before test login page - open login appln url to be given 
+
+@after- 
+
+after the test method completes execution 
+
+
+Script-
+
+package example;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class Script2Annotations {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("execute even before your class starts execution");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("after the class completes its execution");
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("before your test method it will execute");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("after the test method completes execution ");
+	}
+
+	@Test
+	public void loginvalid() {
+		System.out.println("Test1");
+	}
+
+	@Test
+	public void logininvalid() {
+		System.out.println("Test2");
+	}
+
+}
+
+Ignore- it will ignore the test method, class-
+
+@Ignore
+
+	@Test
+	public void logininvalid() {
+		System.out.println("Test2");
+	}
+
+
+Test Suite- Regression testing
+
+Collection of test cases/ scripts executed together 
+
+package example;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({ Script2Annotations.class, ScriptJunit1.class, Test3.class })
+public class AllTests {
+
+}
+
+TestNg-
+
+Test next generation
+
+Features-
+
+1. Report generation will be done
+
+2. More annotation are there
+
+3. Grouped the test methods
+
+4. dependency to methods
+
+5. parallel execution 
+
+methods
+class
+test
+
+6.priority 
+
+7. dataprovider- datadriven testing- test the single functionality with diff set of data
+
+myhcl - 100 user 
+
+Test Suite-
+
+<suite>Amazon appln 
+before suite- connect to server
+<test>- amazon appln functionality
+before test- connect to db server
+<classes>
+<class>
+before class- open the chrome browser , open url of the appln 
+< @Test - test the login functionality>
+</class>
+</classes>
+</test>
+</suite>
+
+collection of test
+
+test1- amazon-chrome
+test2-amazon- firefox
+testn
+
+Selenium webdriver-
+
+package webdriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Test1 {
+  @Test
+  public void f() {
+	  
+	  //Method-1
+	  /*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+	  
+	 
+	  
+	  driver=new ChromeDriver();
+	  
+	  */
+	  
+	  WebDriver driver;
+	  
+	  WebDriverManager.chromedriver().setup();
+	  
+	  driver=new ChromeDriver();
+	  
+	  driver.get("http://testleaf.herokuapp.com/");
+	  
+	  
+	  
+	  
+  }
+  
+  
+}
+
+Elements-
+
+Edit box-sendKeys()
+checkbox
+buttons- click() , submit()
+drop down 
+text area-sendKeys()
+radio button
+list
+frame
+popups
+links - click()
+images
+
+properties/ attributes of the element
+
+locator type=locator value
+
+linktext=text of the link
+
+linktext=Edit
+
+locator types-
+
+1. id - unique identifier
+ id=value
+
+2. name
+ name=value
+
+3. cssSelector
+cssSelector=tagname[attributename=attribute value]
+4. xpath
+
+abs- /html/body/div/div/div[3]/section/div[4]/div/div/input
+
+rel- //tagname[@attribute='value']
+
+5. linktext
+ linktext=text of the link
+
+6. partiallinktext
+7. tagname
+8. classname
+
+
+Edit module-
+
+package webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Test1 {
+  @Test
+  public void fmethod1() {
+	  
+	  //Method-1
+	  /*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+	  
+	 
+	  
+	  driver=new ChromeDriver();
+	  
+	  */
+	  
+	  WebDriver driver;
+	  
+	  WebDriverManager.chromedriver().setup();
+	  
+	  driver=new ChromeDriver();
+	  
+	  driver.get("http://testleaf.herokuapp.com/");
+	  
+	  driver.findElement(By.linkText("Edit")).click();
+	  
+	  driver.findElement(By.id("email")).sendKeys("skarthika@hclc.om");
+
+	  driver.findElement(By.cssSelector("input[value='Append ']")).sendKeys("SME");
+	  
+	  
+	String default_value= driver.findElement(By.name("username")).getAttribute("value");
+	  
+	System.out.println(default_value);
+	
+	driver.findElement(By.name("username")).sendKeys("HCL");
+	  
+	driver.findElement(By.xpath("/html/body/div/div/div[3]/section/div[4]/div/div/input")).clear();
+	
+	boolean output=driver.findElement(By.xpath("//input[@disabled='true']")).isEnabled();
+	
+	if (output==false) {
+		System.out.println("the edit field is disabled");
+	}
+		else
+		{
+		
+			System.out.println("field is enabled");
+		
+	}
+	}
+	
+  }
+  
+
+Buttons module-
+
+public class Test1 {
+  @Test
+  public void fmethod1() {
+	  
+	  //Method-1
+	  /*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+	  
+	 
+	  
+	  driver=new ChromeDriver();
+	  
+	  */
+	  
+	  WebDriver driver;
+	  
+	  WebDriverManager.chromedriver().setup();
+	  
+	  driver=new ChromeDriver();
+	  
+	  driver.get("http://testleaf.herokuapp.com/");
+	  
+	  driver.findElement(By.linkText("Button")).click();
+	  
+	//  driver.findElement(By.id("home")).click();
+	  
+	Point location_value= driver.findElement(By.id("position")).getLocation();
+	
+	
+	int x=location_value.getX();
+	
+	int y=location_value.getY();
+	
+	System.out.println(x);
+	
+	System.out.println(y);
+	
+	WebElement element=driver.findElement(By.id("color"));
+	
+	String colour_value=driver.findElement(By.id("color")).getCssValue("color");
+	
+	System.out.println(colour_value);
+	
+	String hex_value=Color.fromString(colour_value).asHex();
+	
+	System.out.println(hex_value);
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	  
+	  
+	  
+	  
+	
+  }
+  }
+
+Hyper links-
+
+package webdriver;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/");
+
+		driver.findElement(By.linkText("HyperLink")).click();
+
+		String destination= driver.findElement(By.linkText("Find where am supposed to go without clicking me?")).getAttribute("href");
+
+		System.out.println(destination);
+		
+	//	driver.findElement(By.linkText("Verify am I broken?")).click();
+		
+	//	String title=driver.getTitle();
+		
+//		Assert.assertEquals("404 Not Found",title);
+		
+		List<WebElement> links=driver.findElements(By.tagName("a"));
+		
+		System.out.println(links.size());
+}
+}
+
+
+
+
+Images-
+
+package webdriver;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/");
+
+		driver.findElement(By.linkText("Image")).click();
+		
+		List<WebElement> ele=driver.findElements(By.tagName("img"));
+		if(ele== null) {
+			System.out.println("image is broken in the page");
+		}
+
+	//	driver.findElement(By.xpath("//*[@src=\"../images/home.png\"]")).click();
+		
+	boolean broken_imagevalue=driver.findElement(By.xpath("//*[@src=\"../images/abcd.jpg\"]")).getAttribute("src").equals("0");
+	
+	
+	
+	}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+}
+
+
+Select methods-
+
+selectbyvisibletext
+selectbyvalue
+selectbyindex
+ismultiple
+deselectbyvisibletext
+deselectbyvalue
+deselectbyindex
+deselectall
+  
+radio buttons-
+
+driver.findElement(By.id("yes")).click();
+		
+boolean element1=driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[3]/div/div/input[2]")).isSelected();
+
+if (element1==true) {
+	System.out.println("element  already selected");
+}
+
+else
+{
+	driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[3]/div/div/input[2]")).click();
+	System.out.println("element selected now");
+}
+
+
+		
+
+		}
+			
+		
+checkbox-
+
+package webdriver;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/pages/checkbox.html");
+
+		driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/input[3]")).click();
+		
+		boolean checkbox=driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[2]/input")).isSelected();
+		
+		if (checkbox==true) {
+			System.out.println("element already selected");
+		}
+		
+		List<WebElement> checkboxes=driver.findElements(By.xpath("//*[@id=\"contentblock\"]/section/div[3]/input"));
+	
+	    String chk1=checkboxes.get(0).getAttribute("checked");
+	    
+	    if (chk1=="true") {
+	    	driver.findElement(By.xpath("//*[@id=\\\"contentblock\\\"]/section/div[3]/input[1]")).click();
+	    	
+	    	
+	    }
+	    else {
+	    	
+	    	System.out.println("Not clicked already");
+	    	
+	    }
+	   
+ boolean chk2=checkboxes.get(1).isSelected();
+ System.out.println(chk2);
+	    
+	    if (chk2==true) {
+	    	driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[3]/input[2]")).click();
+	    	
+	    	
+	    }
+	    else {
+	    	
+	    	System.out.println("Not clicked already");
+	    	
+	    }
+	    
+	   List< WebElement> allchk=driver.findElements(By.xpath("//*[@id=\"contentblock\"]/section/div[4]/input"));
+	   
+	   
+	  int total=allchk.size();
+	   
+	   for (int i=0;i<total;i++) {
+	   
+	   allchk.get(i).click();
+	    
+	}}}
+		
+Table-
+package webdriver;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/pages/table.html");
+		
+		List<WebElement> columns=driver.findElements(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/table/tbody/tr[1]/th"));
+
+	
+		System.out.println(columns.size());
+		
+		String value2=driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/table/tbody/tr[3]/td[2]")).getText();
+	
+		
+		System.out.println(value2);
+	}
+
+}
+
+Driver.switchTo().alert()-
+
+package webdriver;
+
+import java.util.List;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/pages/Alert.html");
+		
+	    driver.findElement(By.xpath("//*[@onclick=\"normalAlert()\"]")).click();
+	    
+	   String msg= driver.switchTo().alert().getText();
+	   
+	   System.out.println(msg);
+	   
+	   driver.switchTo().alert().accept();
+	   
+	   driver.findElement(By.xpath("//*[@onclick=\"confirmAlert()\"]")).click();
+	   
+	   driver.switchTo().alert().dismiss();
+	   
+	   driver.findElement(By.xpath("//*[@onclick=\"confirmPrompt()\"]")).click();
+	   
+	   Alert alert=driver.switchTo().alert();
+	   
+	   alert.sendKeys("hcl");
+	   
+	   alert.accept();
+	}
+
+}
+
+Frames-
+
+driver.switchTo().frame(index,name , webelement)
+
+Switching b/w windows-
+
+getWindowHandle()- get the session id value of the browser- unique id- alpha numeric value
+
+multiple windows- getWindowHandles()
+
+package webdriver;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("http://testleaf.herokuapp.com/pages/Window.html");
+
+		System.out.println(driver.getTitle());
+		
+		driver.findElement(By.id("home")).click();
+		
+		
+		
+		Set<String> windows_value=driver.getWindowHandles();
+		
+		Iterator<String> iter=windows_value.iterator();
+		
+		String w1=iter.next();
+		
+		String w2=iter.next();
+		
+		System.out.println(w1);
+		
+		System.out.println(w2);
+		
+		driver.switchTo().window(w2);
+		
+		System.out.println(driver.getTitle());
+		
+	
+}
+}
+
+JavascriptExecutor-
+
+
+package webdriver;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("https://demo.automationtesting.in/Datepicker.html");
+
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		
+		js.executeScript("document.getElementById('datepicker1').value='29/08/2017'");
+		
+		js.executeScript("document.getElementById('datepicker2').value='29/08/2017'");
+	}
+
+}
+
+Scroll the page-
+
+WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("https://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
+
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		
+		js.executeScript("scroll(0,750)");
+
+Scroll within the page-
+
+package webdriver;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+
+		driver.get("https://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
+
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+
+		WebElement ele=driver.findElement(By.xpath("//*[@id=\"mCSB_3_container\"]/p[6]/input"));
+		
+		js.executeScript("arguments[0].scrollIntoView(true)",ele);
+		
+		ele.sendKeys("hcl");
+			}
+
+}
+
+Basic commands-
+
+driver.close(); // close the current tab in the browser
+		
+driver.quit(); // close the entire browser along with all the tabs opened
+
+get commands-
+
+get("url");
+getText()- get the inner html value
+getTitle()- return the current title of the page
+System.out.println(driver.getPageSource());
+		
+		System.out.println(driver.getCurrentUrl());
+		
+		
+max & min the window-
+
+driver.manage().window().maximize();
+		
+		Dimension dim=new Dimension(250,250);
+		
+		driver.manage().window().setSize(dim);
+	
+
+Navigate Commands-
+
+driver.navigate().back();
+		
+driver.navigate().forward();
+		
+driver.navigate().refresh();
+		
+driver.navigate().to("https://google.com");
+
+Takescreenshot-
+
+TakesScreenshot interface
+
+TakesScreenshot tk=(TakesScreenshot) driver;
+		
+		File Source=tk.getScreenshotAs(OutputType.FILE);
+		
+		File Destination=new File("C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\reports\\screen1.jpeg");
+		
+		FileHandler.copy(Source, Destination);
+
+
+Robot class-
+
+awt package- java
+
+
+Robot r1=new Robot();
+
+		Dimension scsize=Toolkit.getDefaultToolkit().getScreenSize();
+
+		Rectangle rect=new Rectangle(scsize);
+
+		BufferedImage Source=	r1.createScreenCapture(rect);
+
+
+		File Destination=new File("C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\reports\\screen2.png");
+
+
+		ImageIO.write(Source, "png", Destination);
+		
+Wait stt-
+
+Thread.sleep
+
+
+login page-
+
+us
+pswd
+login 
+
+load the page-3 mins - thread.sleep-5 mins-sync wait - 5 mins -skip the remaning time
+
+search textbox
+
+1. implicit wait-throughout the script
+
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+selenium -4 depreicated 
+
+2. explicit wait-
+
+to a specific element
+login
+
+us
+pswd
+login button
+
+search textbox
+
+
+	WebDriverWait var=new WebDriverWait(driver,20);
+		
+		
+		var.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));
+		
+		
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
+	
+
+3. fluent wait 
+
+-20 secs
+-pollingevery( 5 sec)- 4 time
+-ignore exception
+
+0-4 5 ( search ) 6- 9 (10 ) 11- 14 (15) - 16- 19 (20)
+
+	
+		FluentWait ft=new FluentWait(driver);
+		
+		ft.withTimeout(20,TimeUnit.SECONDS);
+		ft.pollingEvery(5,TimeUnit.SECONDS);
+		ft.ignoring(NoSuchElementException.class);
+		
+		
+		
+		ft.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("")));
+		
+		
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
+		
+
+Action Class-
+
+any mouse or keyboard peration in web appln
+
+ordered list-
+
+package webdriver;
+
+import java.awt.AWTException;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Test1 {
+	@Test
+	public void fmethod1() throws IOException, AWTException {
+
+		//Method-1
+		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\skarthika\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+
+
+
+	  driver=new ChromeDriver();
+
+		 */
+
+		WebDriver driver;
+
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromeDriver();
+		
+		//driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		driver.get("https://leafground.com/list.xhtml");
+		
+		
+	   List< WebElement> ele=driver.findElements(By.xpath("//*[@id=\"j_idt111\"]/div/div[2]/ul/li"));
+	
+	    System.out.println(ele.size());
+	    
+	    Actions act=new Actions(driver);
+	    
+	    act.keyDown(Keys.CONTROL)
+	       .click(ele.get(2))
+	       .click(ele.get(4))
+	       .click(ele.get(6))
+	       .build().perform();
+	    
+	    
+	}
+	
+
+}		
+
+Selenium Advanced-
+
+Framework-
+
+Template, blueprint, guidelines , standards, rules, well organised
+
+advantages-
+
+1. reusable
+2. organised
+3. rules
+4. managed
+5. standards
+6. reduce efforts
+7. effective
+
+POM - Page object model
+
+Design pattern
+
+Eg-
+v1.1
+firstname- id=user- 10 class - each class 10 times
+
+v1.2
+firstname - id=customer
+
+
+POM- design pattern 
+
+Script
+1. functionality- behaviour
+2. elements attribute - OR ( object repository)
+
+Reg - firstname- id=user
+
+Reg class
+
+firstname.entervalue
+
+Elements
+
+id=customer
+
+
+Page Factory
+
+
+datadriven- passing multiple values for a single functionality
+
+excel
+
+jxl jar 97- 2003
+
+apache poi lib file older, latest version
+
+HSSF - horrible strict style format ( 97-03)
+
+XSSF -  xml strict style format (latest)
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+
+
+Script- fn-
+
+package functionality;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import objectrepo.Elements;
+
+
+public class SignPage {
+	
+	
+	@Test
+	public void test() throws IOException {
+	
+	WebDriver driver;
+
+	WebDriverManager.chromedriver().setup();
+
+	driver=new ChromeDriver();
+	
+	FileInputStream fi=new FileInputStream("C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\datadrive.xlsx");
+	
+	XSSFWorkbook w1=new XSSFWorkbook(fi);
+	
+	XSSFSheet s1=w1.getSheetAt(0);
+	
+	for (int i=1;i<=s1.getLastRowNum();i++) {
+		
+		XSSFRow currentrow=s1.getRow(i);
+		
+		String fname=currentrow.getCell(0).getStringCellValue();
+		String mobileno=currentrow.getCell(1).getStringCellValue();
+		String email=currentrow.getCell(2).getStringCellValue();
+		
+		String pswd=currentrow.getCell(3).getStringCellValue();
+	
+	
+	
+	
+	driver.get("https://www.amazon.in/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F%26ext_vrnc%3Dhi%26tag%3Dgooghydrabk1-21%26ref%3Dnav_ya_signin%26adgrpid%3D58355126069%26hvpone%3D%26hvptwo%3D%26hvadid%3D486458712209%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D2644989337340944378%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D9062008%26hvtargid%3Dkwd-10573980%26hydadcr%3D14453_2154373%26gclid%3DEAIaIQobChMI1ZLsxsvB-wIVtJFmAh2STQc0EAAYASAAEgJ2KPD_BwE&prevRID=W63BB8DV0JS4A9BGCQQ6&openid.assoc_handle=inflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
+	
+	//Elements ele=new Elements();
+	
+	PageFactory.initElements(driver,Elements.class);
+	
+	Elements.fname.sendKeys(fname);
+	
+	Elements.mobileno.sendKeys(mobileno);
+	
+	Elements.email.sendKeys(email);
+	
+	Elements.password.sendKeys(pswd);
+	
+	Elements.continuebutton.click();
+	
+	
+	
+
+
+}
+
+}}
+
+Elemenets-
+
+package objectrepo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Elements {
+	
+	
+	@FindBy(id="ap_customer_name")
+	public static WebElement fname;
+	
+	@FindBy(id="ap_phone_number")
+	public static WebElement mobileno;
+	
+	@FindBy(name="secondaryLoginClaim")
+	public static WebElement email;
+	
+	@FindBy(name="password")
+	public static WebElement password;
+	
+	@FindBy(id="continue")
+	public static WebElement continuebutton;
+	
+
+/*
+	public static WebElement fname(WebDriver driver) {
+
+		return driver.findElement(By.id("ap_customer_name"));
+
+	}
+
+	public static WebElement mobileno(WebDriver driver) {
+		return driver.findElement(By.id("ap_phone_number"));
+	}
+
+	public static WebElement email(WebDriver driver) {
+
+		return driver.findElement(By.name("secondaryLoginClaim"));
+
+	}
+
+	public static WebElement password(WebDriver driver) {
+
+		return driver.findElement(By.name("password"));
+
+
+	}
+
+	public static WebElement continuebutton(WebDriver driver) {
+		return driver.findElement(By.id("continue"));
+	}
+	
+	*/
+}
+
+
+config.properties
+
+package functionality;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import objectrepo.Elements;
+
+
+public class SignPage {
+
+
+	@Test
+	public void test() throws IOException {
+
+		FileInputStream f1=new FileInputStream("src//test//java//Config.properties");
+
+		Properties prop=new Properties();
+
+		prop.load(f1);
+
+		String browsername=prop.getProperty("browser");
+
+		String excelpath=prop.getProperty("filepath");
+		
+		WebDriver driver;
+
+		if (browsername.equals("chrome")) {
+
+			
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new ChromeDriver();
+
+		}
+
+		else if( browsername.equals("firefox")) {
+
+			
+
+			WebDriverManager.firefoxdriver().setup();
+
+			driver=new FirefoxDriver();
+		}
+
+		else if ( browsername.equalsIgnoreCase("Edge")) {
+
+			
+
+			WebDriverManager.edgedriver().setup();
+
+			driver=new EdgeDriver();
+		}
+
+		else {
+
+			
+
+			WebDriverManager.iedriver().setup();
+
+			driver=new InternetExplorerDriver();
+
+
+
+		}
+
+		FileInputStream fi=new FileInputStream(excelpath);
+
+		XSSFWorkbook w1=new XSSFWorkbook(fi);
+
+		XSSFSheet s1=w1.getSheetAt(0);
+
+		for (int i=1;i<=s1.getLastRowNum();i++) {
+
+			XSSFRow currentrow=s1.getRow(i);
+
+			String fname=currentrow.getCell(0).getStringCellValue();
+			String mobileno=currentrow.getCell(1).getStringCellValue();
+			String email=currentrow.getCell(2).getStringCellValue();
+
+			String pswd=currentrow.getCell(3).getStringCellValue();
+
+
+
+
+			driver.get("https://www.amazon.in/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F%26ext_vrnc%3Dhi%26tag%3Dgooghydrabk1-21%26ref%3Dnav_ya_signin%26adgrpid%3D58355126069%26hvpone%3D%26hvptwo%3D%26hvadid%3D486458712209%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D2644989337340944378%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D9062008%26hvtargid%3Dkwd-10573980%26hydadcr%3D14453_2154373%26gclid%3DEAIaIQobChMI1ZLsxsvB-wIVtJFmAh2STQc0EAAYASAAEgJ2KPD_BwE&prevRID=W63BB8DV0JS4A9BGCQQ6&openid.assoc_handle=inflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
+
+			//Elements ele=new Elements();
+
+			PageFactory.initElements(driver,Elements.class);
+
+			Elements.fname.sendKeys(fname);
+
+			Elements.mobileno.sendKeys(mobileno);
+
+			Elements.email.sendKeys(email);
+
+			Elements.password.sendKeys(pswd);
+
+			Elements.continuebutton.click();
+		}
+
+	}}
+Config.proper-
+
+browser=edge
+filepath=C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\datadrive.xlsx
+fname=aaaa
+mobileno=3535535
+email=adada
+pswd=vdgfdfg
+
+
+
+
+cookies- - get cookies - all  or one cookie, add cookie - cookie name & session id ( create the object for the cookie), delete cookie- deleteallcookies, deletecookiebyname, deletecookiebyobjectname
+
+package functionality;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import objectrepo.Elements;
+
+
+public class SignPage {
+
+
+	@Test
+	public void test() throws IOException {
+
+		FileInputStream f1=new FileInputStream("src//test//java//Config.properties");
+
+		Properties prop=new Properties();
+
+		prop.load(f1);
+
+		String browsername=prop.getProperty("browser");
+
+		String excelpath=prop.getProperty("filepath");
+		
+		String fname=prop.getProperty("fname");
+		
+		String mobileno=prop.getProperty("mobileno");
+		
+		
+		
+		WebDriver driver;
+
+		if (browsername.equals("chrome")) {
+
+			
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new ChromeDriver();
+
+		}
+
+		else if( browsername.equals("firefox")) {
+
+			
+
+			WebDriverManager.firefoxdriver().setup();
+
+			driver=new FirefoxDriver();
+		}
+
+		else if ( browsername.equalsIgnoreCase("Edge")) {
+
+			
+
+			WebDriverManager.edgedriver().setup();
+
+			driver=new EdgeDriver();
+		}
+
+		else {
+
+			
+
+			WebDriverManager.iedriver().setup();
+
+			driver=new InternetExplorerDriver();
+
+
+
+		}
+
+		FileInputStream fi=new FileInputStream(excelpath);
+
+		XSSFWorkbook w1=new XSSFWorkbook(fi);
+
+		XSSFSheet s1=w1.getSheetAt(0);
+
+		for (int i=1;i<=s1.getLastRowNum();i++) {
+
+			XSSFRow currentrow=s1.getRow(i);
+
+			//String fname=currentrow.getCell(0).getStringCellValue();
+			//String mobileno=currentrow.getCell(1).getStringCellValue();
+			String email=currentrow.getCell(2).getStringCellValue();
+
+			String pswd=currentrow.getCell(3).getStringCellValue();
+
+
+
+
+			driver.get("https://www.amazon.in/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F%26ext_vrnc%3Dhi%26tag%3Dgooghydrabk1-21%26ref%3Dnav_ya_signin%26adgrpid%3D58355126069%26hvpone%3D%26hvptwo%3D%26hvadid%3D486458712209%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D2644989337340944378%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D9062008%26hvtargid%3Dkwd-10573980%26hydadcr%3D14453_2154373%26gclid%3DEAIaIQobChMI1ZLsxsvB-wIVtJFmAh2STQc0EAAYASAAEgJ2KPD_BwE&prevRID=W63BB8DV0JS4A9BGCQQ6&openid.assoc_handle=inflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
+
+			//Elements ele=new Elements();
+
+			PageFactory.initElements(driver,Elements.class);
+
+			Elements.fname.sendKeys(fname);
+
+			Elements.mobileno.sendKeys(mobileno);
+
+			Elements.email.sendKeys(email);
+
+			Elements.password.sendKeys(pswd);
+
+			Elements.continuebutton.click();
+			
+			File f4=new File("C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\reports\\cookies.data");
+			
+			try {
+				f4.createNewFile();
+				
+				FileWriter fw=new FileWriter(f4);
+				
+				BufferedWriter bw=new BufferedWriter(fw);
+				
+				
+				for (Cookie ck :driver.manage().getCookies()) {
+				
+					bw.write((ck.getName()+";"+ ck.getDomain()+";"+ck.getPath()+";"+ck.getValue()+";"+ck.getExpiry()+";"+ck.isSecure()));
+					
+					bw.newLine();
+					
+				
+			}
+				
+				bw.close();
+				fw.close();
+
+      driver.manage().getCookieNamed("ubid-acbin");//get a particular cookie
+      
+      driver.manage().deleteAllCookies();
+      
+      driver.manage().deleteCookieNamed("ubid-acbin");
+      
+      
+    Cookie ck1=new Cookie("aaaaaa","123456");
+    
+    driver.manage().addCookie(ck1);
+    
+    driver.manage().deleteCookie(ck1);
+    
+   
+    
+    
+    
+
+
+		}
+			
+			catch(Exception e) {
+				System.out.println(e);
+			}
+
+	}}}
+
+
+
+desired capabilities-settings for all browsers
+
+
+chrome options-settings for chrome
+
+
+@Test
+	public void test() throws IOException {
+
+		
+		
+		
+		
+		WebDriver driver;
+
+			//DesiredCapabilities des=new DesiredCapabilities();
+			
+			//des.setAcceptInsecureCerts(true);
+		
+		ChromeOptions cr=new ChromeOptions();
+		
+		cr.setAcceptInsecureCerts(true);
+		
+		cr.addArguments("incognito");
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new ChromeDriver(cr);
+
+			
+
+			driver.get("https://badssl.com/");
+			
+			driver.findElement(By.linkText("wrong.host")).click();
+			
+	
+
+upload and download a file
+
+package functionality;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import objectrepo.Elements;
+
+
+public class SignPage {
+
+
+	@Test
+	public void test() throws IOException, AWTException, InterruptedException {
+
+		
+		
+		
+		
+		WebDriver driver;
+
+			//DesiredCapabilities des=new DesiredCapabilities();
+			
+			//des.setAcceptInsecureCerts(true);
+		
+		
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new ChromeDriver();
+
+			
+
+			driver.get("https://www.ilovepdf.com/word_to_pdf");
+			
+			driver.findElement(By.id("pickfiles")).click();
+			
+			String filepath="C:\\Users\\skarthika\\OneDrive - HCL Technologies Ltd\\Desktop\\Functional  Test Plan Template.doc";
+			
+			StringSelection st=new StringSelection(filepath);
+			
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(st, null);
+			
+			Thread.sleep(50000);
+			
+			Robot r1=new Robot();
+			
+			r1.keyPress(KeyEvent.VK_CONTROL);
+			
+			r1.keyPress(KeyEvent.VK_V);
+			
+			r1.keyRelease(KeyEvent.VK_V);
+			
+			r1.keyRelease(KeyEvent.VK_CONTROL);
+			
+			r1.keyPress(KeyEvent.VK_ENTER);
+			
+			r1.keyRelease(KeyEvent.VK_ENTER);
+			
+			Thread.sleep(20000);
+			
+			driver.findElement(By.id("processTask")).click();
+			
+			
+			Thread.sleep(20000);
+			
+			driver.findElement(By.id("pickfiles")).click();
+			
+			File filelocation=new File("C:\\Users\\skarthika\\Downloads");
+			
+			File[] total=filelocation.listFiles();
+			
+			for(File file:total) {
+				
+				if(file.getName().equals("Functional  Test Plan Template (1).pdf")) {
+					
+					System.out.println("File downloaded");
+					
+					
+				}
+				else {
+					System.out.println("File not dwonloaded");
+				}
+				
+				break;
+			}
+			
+	}}
+	
+Headless browsers-
+
+htmlunitdriver();
+
+@Test
+	public void test() throws IOException, AWTException, InterruptedException {
+
+		
+		
+		
+		
+		WebDriver driver;
+
+			//DesiredCapabilities des=new DesiredCapabilities();
+			
+			//des.setAcceptInsecureCerts(true);
+		
+		
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new HtmlUnitDriver();
+
+			
+
+			driver.get("https://www.ilovepdf.com/word_to_pdf");
+			
+			driver.findElement(By.id("pickfiles")).click();
+			
+						
+
+			
+	}}	
+		
+Hands-on-
+1. Junit assertions
+2. TestNg - Annotations
+3. TestNg- Suite file creation
+4. Grouping
+5. Depend on methods
+6. Priority
+7. Parallel
+8. DataProvider
+9. reporter.log
+10.ignore method
+
+14/11/22
+11.Find the height and width -  http://testleaf.herokuapp.com/pages/Button.html
+
+15.Go to Home Page (Interact with same link name)-http://testleaf.herokuapp.com/pages/Link.html
+16.http://testleaf.herokuapp.com/pages/Dropdown.html - All the drop down list boxes
+
+15/11/22
+17.Check the vital task for the least completed progress. -http://testleaf.herokuapp.com/pages/table.html
+18.Click the button to learn line-breaks in an alert.-http://testleaf.herokuapp.com/pages/Alert.html 
+19.Alert-https://demo.automationtesting.in/Alerts.html- 
+20.Frames-https://demo.automationtesting.in/Frames.html
+
+18thnov-
+
+21.http://testleaf.herokuapp.com/pages/Window.html - switching b/w windows
+22.http://testleaf.herokuapp.com/pages/Calendar.html - datepicker
+23.https://www.makemytrip.com/ - datepicker
+24.http://register.rediff.com/register/register.php?FormName=user_details - dynamix xpath
+
+
+21st Nov-
+
+https://leafground.com/drag.xhtml;jsessionid=node01uaewobqyw4ez15l2yjf181fos429083.node0 - drag and drop
+
+22nd -
+
+https://demo.automationtesting.in/Selectable.html - ordered list and action class
+
+
+
+ 
+/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[2]/div[3]/div[3]/div[3]/div/p[1]
+
+//*[@id="root"]/div/div[2]/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[2]/div[3]/div[3]/div[3]/div/p[1]
+
+
+FindElements
+
+for 
+
+get(i).getText()-> 13
+
+if (text=13)
+click
+
+Case study-
+
+
+Ksrtc appln
+
+1. sign up
+
+2. Sign in 
+
+3. search for tickets
+
+4. POM - page factory , Datadriven -excel
+
+5. takescreenshot
+
+6. take the html report
